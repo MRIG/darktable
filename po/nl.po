@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: darktable _master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-25 13:04+0200\n"
-"PO-Revision-Date: 2020-05-25 13:30+0200\n"
+"POT-Creation-Date: 2020-05-26 09:25+0200\n"
+"PO-Revision-Date: 2020-05-26 09:33+0200\n"
 "Last-Translator: Ger Siemerink <g.siemerink@gmail.com>\n"
 "Language-Team: Ger Siemerink <g.siemerink@gmail.com>\n"
 "Language: nl_NL\n"
@@ -28,7 +28,7 @@ msgid "graphics;photography;raw;"
 msgstr "grafische vormgeving;fotografie;raw;"
 
 #: ../build/src/preferences_gen.h:1608 ../src/libs/tools/lighttable.c:91
-#: ../src/views/lighttable.c:83
+#: ../src/views/lighttable.c:87
 msgid "lighttable"
 msgstr "bibliotheek"
 
@@ -563,6 +563,8 @@ msgstr "naar 1/4"
 #: ../build/src/preferences_gen.h:2524
 msgid "decrease to speed up preview rendering, may hinder accurate masking"
 msgstr ""
+"verkleinen om de voorbeeldweergave te versnellen, kan een nauwkeurige "
+"maskering belemmeren"
 
 #: ../build/src/preferences_gen.h:2551
 msgid "other views"
@@ -1284,6 +1286,8 @@ msgid ""
 "keep original filename instead of a pattern while importing from camera or "
 "card"
 msgstr ""
+"bewaar de originele bestandsnaam in plaats van een patroon tijdens het "
+"importeren van camera of kaart"
 
 #: ../build/src/preferences_gen.h:4128
 msgid "file naming pattern"
@@ -4172,7 +4176,7 @@ msgid "warning: did you want to swap these boundaries?\n"
 msgstr "waarschuwing: verwisselde je de kaders?\n"
 
 #: ../src/generate-cache/main.c:218
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "warning: disk backend for thumbnail cache is disabled (cache_disk_backend)\n"
 "if you want to pre-generate thumbnails and for darktable to use them, you "
@@ -4181,12 +4185,12 @@ msgid ""
 msgstr ""
 "waarschuwing: disk-backend voor de miniaturencache is uitgeschakeld "
 "(cache_disk_backend)\n"
-"als miniaturen vooraf moeten worden gemaakt en worden gebruikt door "
-"darktable\n"
-"dan moet de disk-backend voor miniaturen ingeschakeld worden."
+"als u vooraf een volledige preview wilt, moet u de schijfbackend inschakelen "
+"voor volledige preview-cache\n"
+"er hoeven geen miniaturen te worden gegenereerd\n"
 
 #: ../src/generate-cache/main.c:229
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "warning: disk backend for full preview cache is disabled "
 "(cache_disk_backend_full)\n"
@@ -4194,11 +4198,11 @@ msgid ""
 "need to enable disk backend for full preview cache\n"
 "no thumbnails to be generated, done.\n"
 msgstr ""
-"waarschuwing: disk-backend voor de miniaturencache is uitgeschakeld "
-"(cache_disk_backend)\n"
-"als miniaturen vooraf moeten worden gemaakt en worden gebruikt door "
-"darktable\n"
-"dan moet de disk-backend voor miniaturen ingeschakeld worden."
+"waarschuwing: disk-backend voor de volledige miniaturen cache weergave is "
+"uitgeschakeld (cache_disk_backend)\n"
+"als u vooraf een volledige preview wilt, moet u de schijfbackend inschakelen "
+"voor volledige preview-cache\n"
+"er hoeven geen miniaturen te worden gegenereerd\n"
 
 #: ../src/generate-cache/main.c:239
 #, c-format
@@ -8188,21 +8192,21 @@ msgstr "voorgenomen output"
 #: ../src/iop/colorout.c:882 ../src/libs/export.c:679
 #: ../src/libs/print_settings.c:1244 ../src/libs/print_settings.c:1459
 #: ../src/views/darkroom.c:2257 ../src/views/darkroom.c:2265
-#: ../src/views/lighttable.c:1255 ../src/views/lighttable.c:1263
+#: ../src/views/lighttable.c:1335 ../src/views/lighttable.c:1343
 msgid "perceptual"
 msgstr "perceptueel"
 
 #: ../src/iop/colorout.c:883 ../src/libs/export.c:680
 #: ../src/libs/print_settings.c:1245 ../src/libs/print_settings.c:1460
 #: ../src/views/darkroom.c:2258 ../src/views/darkroom.c:2266
-#: ../src/views/lighttable.c:1256 ../src/views/lighttable.c:1264
+#: ../src/views/lighttable.c:1336 ../src/views/lighttable.c:1344
 msgid "relative colorimetric"
 msgstr "relatieve colorimetrie"
 
 #: ../src/iop/colorout.c:884 ../src/libs/export.c:681
 #: ../src/libs/print_settings.c:1246 ../src/libs/print_settings.c:1461
 #: ../src/views/darkroom.c:2259 ../src/views/darkroom.c:2267
-#: ../src/views/lighttable.c:1257 ../src/views/lighttable.c:1265
+#: ../src/views/lighttable.c:1337 ../src/views/lighttable.c:1345
 msgctxt "rendering intent"
 msgid "saturation"
 msgstr "verzadiging"
@@ -8210,7 +8214,7 @@ msgstr "verzadiging"
 #: ../src/iop/colorout.c:885 ../src/libs/export.c:682
 #: ../src/libs/print_settings.c:1247 ../src/libs/print_settings.c:1462
 #: ../src/views/darkroom.c:2260 ../src/views/darkroom.c:2268
-#: ../src/views/lighttable.c:1258 ../src/views/lighttable.c:1266
+#: ../src/views/lighttable.c:1338 ../src/views/lighttable.c:1346
 msgid "absolute colorimetric"
 msgstr "absolute colorimetrie"
 
@@ -8379,7 +8383,6 @@ msgstr ""
 "weergave van maskers is onmogelijk wanneer een mengmasker wordt getoond"
 
 #: ../src/iop/colorzones.c:2379 ../src/iop/rgbcurve.c:1485
-#, fuzzy
 msgid ""
 "create a curve based on an area from the image\n"
 "drag to create a flat curve\n"
@@ -8387,7 +8390,7 @@ msgid ""
 "shift+drag to create a negative curve"
 msgstr ""
 "creëer een curve gebaseerd op een deel van de afbeelding\n"
-"klik voor een platte curve\n"
+"sleep voor een platte curve\n"
 "ctrl+klik voor een positieve curve\n"
 "shift+klik voor een negatieve curve"
 
@@ -10940,7 +10943,6 @@ msgid "color"
 msgstr "kleur"
 
 #: ../src/iop/negadoctor.c:1055
-#, fuzzy
 msgid "toggle on or off the color controls"
 msgstr "schakel de kleurregelaars in of uit"
 
@@ -16040,13 +16042,13 @@ msgstr "volledig inzoomen"
 
 #. zoom in/out
 #: ../src/libs/tools/lighttable.c:215 ../src/views/darkroom.c:3600
-#: ../src/views/lighttable.c:746
+#: ../src/views/lighttable.c:826
 msgctxt "accel"
 msgid "zoom in"
 msgstr "inzoomen"
 
 #: ../src/libs/tools/lighttable.c:216 ../src/views/darkroom.c:3601
-#: ../src/views/lighttable.c:747
+#: ../src/views/lighttable.c:827
 msgctxt "accel"
 msgid "zoom out"
 msgstr "uitzoomen"
@@ -16280,19 +16282,19 @@ msgstr ""
 "gamma controle in/uit schakelen\n"
 "opties via de rechtermuisknop"
 
-#: ../src/views/darkroom.c:2255 ../src/views/lighttable.c:1253
+#: ../src/views/darkroom.c:2255 ../src/views/lighttable.c:1333
 msgid "display intent"
 msgstr "toon voornemen"
 
-#: ../src/views/darkroom.c:2263 ../src/views/lighttable.c:1261
+#: ../src/views/darkroom.c:2263 ../src/views/lighttable.c:1341
 msgid "preview display intent"
 msgstr "voorbeeldweergave intentie"
 
-#: ../src/views/darkroom.c:2283 ../src/views/lighttable.c:1269
+#: ../src/views/darkroom.c:2283 ../src/views/lighttable.c:1349
 msgid "display profile"
 msgstr "weergaveprofiel"
 
-#: ../src/views/darkroom.c:2284 ../src/views/lighttable.c:1273
+#: ../src/views/darkroom.c:2284 ../src/views/lighttable.c:1353
 msgid "preview display profile"
 msgstr "voorbeeld weergaveprofiel"
 
@@ -16300,12 +16302,12 @@ msgstr "voorbeeld weergaveprofiel"
 msgid "histogram profile"
 msgstr "histogram profiel"
 
-#: ../src/views/darkroom.c:2339 ../src/views/lighttable.c:1303
+#: ../src/views/darkroom.c:2339 ../src/views/lighttable.c:1383
 #, c-format
 msgid "display ICC profiles in %s or %s"
 msgstr "toon ICC profielen in %s of %s"
 
-#: ../src/views/darkroom.c:2342 ../src/views/lighttable.c:1306
+#: ../src/views/darkroom.c:2342 ../src/views/lighttable.c:1386
 #, c-format
 msgid "preview display ICC profiles in %s or %s"
 msgstr "voorbeeldweergave ICC profielen in %s of %s"
@@ -16447,13 +16449,13 @@ msgid "full preview"
 msgstr "volledige voorbeeld"
 
 #. undo/redo
-#: ../src/views/darkroom.c:3647 ../src/views/lighttable.c:738
+#: ../src/views/darkroom.c:3647 ../src/views/lighttable.c:818
 #: ../src/views/map.c:919
 msgctxt "accel"
 msgid "undo"
 msgstr "herstel"
 
-#: ../src/views/darkroom.c:3648 ../src/views/lighttable.c:739
+#: ../src/views/darkroom.c:3648 ../src/views/lighttable.c:819
 #: ../src/views/map.c:920
 msgctxt "accel"
 msgid "redo"
@@ -16475,7 +16477,7 @@ msgstr "zoek modules"
 msgid "switch to lighttable"
 msgstr "schakel naar bibliotheek"
 
-#: ../src/views/darkroom.c:3777 ../src/views/lighttable.c:916
+#: ../src/views/darkroom.c:3777 ../src/views/lighttable.c:996
 msgid "zoom in the image"
 msgstr "inzoomen op de afbeelding"
 
@@ -16504,215 +16506,215 @@ msgstr "darktable - voorbeeldweergave ontwikkelen"
 msgid "good knight"
 msgstr "goedenacht"
 
-#: ../src/views/lighttable.c:270 ../src/views/slideshow.c:376
+#: ../src/views/lighttable.c:350 ../src/views/slideshow.c:376
 msgid "there are no images in this collection"
 msgstr "er bevinden zich geen afbeeldingen in deze collectie"
 
-#: ../src/views/lighttable.c:274
+#: ../src/views/lighttable.c:354
 msgid "if you have not imported any images yet"
 msgstr "als nog geen afbeeldingen zijn geïmporteerd"
 
-#: ../src/views/lighttable.c:278
+#: ../src/views/lighttable.c:358
 msgid "you can do so in the import module"
 msgstr "dit kan worden uitgevoerd vanuit de importeer-module"
 
-#: ../src/views/lighttable.c:286
+#: ../src/views/lighttable.c:366
 msgid "try to relax the filter settings in the top panel"
 msgstr "verruim het filter in het toppaneel"
 
-#: ../src/views/lighttable.c:295
+#: ../src/views/lighttable.c:375
 msgid "or add images in the collection module in the left panel"
 msgstr "of importeer afbeeldingen naar de catalogus in het linkerpaneel"
 
 #. movement keys
-#: ../src/views/lighttable.c:706
+#: ../src/views/lighttable.c:786
 msgctxt "accel"
 msgid "move page up"
 msgstr "verplaats pagina omhoog"
 
-#: ../src/views/lighttable.c:707
+#: ../src/views/lighttable.c:787
 msgctxt "accel"
 msgid "move page down"
 msgstr "verplaats pagina omlaag "
 
-#: ../src/views/lighttable.c:708
+#: ../src/views/lighttable.c:788
 msgctxt "accel"
 msgid "move up"
 msgstr "verplaats omhoog"
 
-#: ../src/views/lighttable.c:709
+#: ../src/views/lighttable.c:789
 msgctxt "accel"
 msgid "move down"
 msgstr "verplaats omlaag"
 
-#: ../src/views/lighttable.c:710
+#: ../src/views/lighttable.c:790
 msgctxt "accel"
 msgid "move left"
 msgstr "verplaats naar links"
 
-#: ../src/views/lighttable.c:711
+#: ../src/views/lighttable.c:791
 msgctxt "accel"
 msgid "move right"
 msgstr "verplaats naar rechts"
 
-#: ../src/views/lighttable.c:712
+#: ../src/views/lighttable.c:792
 msgctxt "accel"
 msgid "move start"
 msgstr "verplaats begin"
 
-#: ../src/views/lighttable.c:713
+#: ../src/views/lighttable.c:793
 msgctxt "accel"
 msgid "move end"
 msgstr "verplaats einde"
 
 #. movement keys with selection
-#: ../src/views/lighttable.c:716
+#: ../src/views/lighttable.c:796
 msgctxt "accel"
 msgid "move page up and select"
 msgstr "verplaats pagina omhoog en selecteer"
 
-#: ../src/views/lighttable.c:717
+#: ../src/views/lighttable.c:797
 msgctxt "accel"
 msgid "move page down and select"
 msgstr "verplaats pagina omlaag en selecteer"
 
-#: ../src/views/lighttable.c:718
+#: ../src/views/lighttable.c:798
 msgctxt "accel"
 msgid "move up and select"
 msgstr "verplaats omhoog en selecteer"
 
-#: ../src/views/lighttable.c:719
+#: ../src/views/lighttable.c:799
 msgctxt "accel"
 msgid "move down and select"
 msgstr "verplaats neerwaarts en selecteer"
 
-#: ../src/views/lighttable.c:720
+#: ../src/views/lighttable.c:800
 msgctxt "accel"
 msgid "move left and select"
 msgstr "verplaats naar links en selecteer"
 
-#: ../src/views/lighttable.c:721
+#: ../src/views/lighttable.c:801
 msgctxt "accel"
 msgid "move right and select"
 msgstr "verplaats naar rechts en selecteer"
 
-#: ../src/views/lighttable.c:722
+#: ../src/views/lighttable.c:802
 msgctxt "accel"
 msgid "move start and select"
 msgstr "verplaats start en selecteer"
 
-#: ../src/views/lighttable.c:723
+#: ../src/views/lighttable.c:803
 msgctxt "accel"
 msgid "move end and select"
 msgstr "verplaats naar einde en selecteer"
 
-#: ../src/views/lighttable.c:725
+#: ../src/views/lighttable.c:805
 msgctxt "accel"
 msgid "align images to grid"
 msgstr "uitlijnen afbeeldingen op raster"
 
-#: ../src/views/lighttable.c:726
+#: ../src/views/lighttable.c:806
 msgctxt "accel"
 msgid "reset first image offset"
 msgstr "reset eerste beeldverschuiving"
 
-#: ../src/views/lighttable.c:727
+#: ../src/views/lighttable.c:807
 msgctxt "accel"
 msgid "select toggle image"
 msgstr "omkeren afbeelding"
 
-#: ../src/views/lighttable.c:728
+#: ../src/views/lighttable.c:808
 msgctxt "accel"
 msgid "select single image"
 msgstr "selecteer een  afbeelding"
 
 #. Preview key
-#: ../src/views/lighttable.c:731
+#: ../src/views/lighttable.c:811
 msgctxt "accel"
 msgid "preview"
 msgstr "voorbeeld"
 
-#: ../src/views/lighttable.c:732
+#: ../src/views/lighttable.c:812
 msgctxt "accel"
 msgid "preview with focus detection"
 msgstr "voorbeeld met focusdetectie"
 
-#: ../src/views/lighttable.c:733
+#: ../src/views/lighttable.c:813
 msgctxt "accel"
 msgid "sticky preview"
 msgstr "sticky-voorbeeld"
 
-#: ../src/views/lighttable.c:734
+#: ../src/views/lighttable.c:814
 msgctxt "accel"
 msgid "sticky preview with focus detection"
 msgstr "sticky-voorbeeld met focus detectie"
 
 #. zoom for full culling & preview
-#: ../src/views/lighttable.c:742
+#: ../src/views/lighttable.c:822
 msgctxt "accel"
 msgid "preview zoom 100%"
 msgstr "voorbeeld zoom 100%"
 
-#: ../src/views/lighttable.c:743
+#: ../src/views/lighttable.c:823
 msgctxt "accel"
 msgid "preview zoom fit"
 msgstr "voorbeeld passende zoom"
 
-#: ../src/views/lighttable.c:903
+#: ../src/views/lighttable.c:983
 msgid "open image in darkroom"
 msgstr "open afbeelding in ontwikkelen"
 
-#: ../src/views/lighttable.c:910
+#: ../src/views/lighttable.c:990
 msgid "switch to next/previous image"
 msgstr "overschakelen naar volgende/voorgaande afbeelding"
 
-#: ../src/views/lighttable.c:922 ../src/views/lighttable.c:980
+#: ../src/views/lighttable.c:1002 ../src/views/lighttable.c:1060
 #, no-c-format
 msgid "zoom to 100% and back"
 msgstr "zoom naar 100% en terug"
 
-#: ../src/views/lighttable.c:929 ../src/views/lighttable.c:951
+#: ../src/views/lighttable.c:1009 ../src/views/lighttable.c:1031
 msgid "scroll the collection"
 msgstr "scroll door collectie"
 
-#: ../src/views/lighttable.c:935
+#: ../src/views/lighttable.c:1015
 msgid "change number of images per row"
 msgstr "wijzig aantal afbeeldingen per rij"
 
-#: ../src/views/lighttable.c:943
+#: ../src/views/lighttable.c:1023
 msgid "change image order"
 msgstr "afbeeldings volgorde wijzigen"
 
-#: ../src/views/lighttable.c:957
+#: ../src/views/lighttable.c:1037
 msgid "zoom all the images"
 msgstr "inzoomen in op alle afbeeldingen"
 
-#: ../src/views/lighttable.c:962
+#: ../src/views/lighttable.c:1042
 msgid "pan inside all the images"
 msgstr "uitzoomen op alle afbeeldingen"
 
-#: ../src/views/lighttable.c:968
+#: ../src/views/lighttable.c:1048
 msgid "zoom current image"
 msgstr "inzoomen op huidige afbeelding"
 
-#: ../src/views/lighttable.c:974
+#: ../src/views/lighttable.c:1054
 msgid "pan inside current image"
 msgstr "uitzoomen op huidige afbeelding"
 
-#: ../src/views/lighttable.c:987
+#: ../src/views/lighttable.c:1067
 #, no-c-format
 msgid "zoom current image to 100% and back"
 msgstr "zoom huidige afbeelding naar 100% en terug"
 
-#: ../src/views/lighttable.c:994
+#: ../src/views/lighttable.c:1074
 msgid "zoom the main view"
 msgstr "zoom in op hoofdaanzicht"
 
-#: ../src/views/lighttable.c:999
+#: ../src/views/lighttable.c:1079
 msgid "pan inside the main view"
 msgstr "zoom binnen de pan inside hoofdweergave"
 
-#: ../src/views/lighttable.c:1230
+#: ../src/views/lighttable.c:1310
 msgid "set display profile"
 msgstr "kies weergaveprofiel"
 
